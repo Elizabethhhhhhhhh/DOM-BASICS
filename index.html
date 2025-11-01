@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="src/output.css" rel="stylesheet" />
+</head>
+<body class="body" id="body">
+  <h1 class="cart-title">POS SYSTEM</h1>
+  <div class="main-container">
+    <div class="one">
+      <h2 class="products-title">PRODUCTS</h2>
+      <ul class="products-list">
+        <li class="product-card">Chippy<p></p><p>₱8</p></li>
+        <li class="product-card"><p>Piattos</p><p>₱18</p></li>
+        <li class="product-card"><p>Cheetos</p><p>₱10</p></li>
+        <li class="product-card"><p>Choc-Nut</p><p>₱10</p></li>
+        <li class="product-card"><p>Milo</p><p>₱10</p></li>
+        <li class="product-card"><p>Sprite</p><p>₱20</p></li>
+        <li class="product-card"><p>Rebisco</p><p>₱8</p></li>
+        <li class="product-card"><p>Pancit Canton</p><p>₱18</p></li>
+        <li class="product-card"><p>Oishi</p><p>₱8</p></li>
+        <li class="product-card"><p>Oreo</p><p>₱10</p></li>
+        <li class="product-card"><p>Coke Mismo</p><p>₱20</p></li>
+        <li class="product-card"><p>Tortillos<p>₱8</p></li>
+      </ul>
+    </div>
+
+    <div class="cart-container">
+      <h2 class="cart-section-title">CART</h2>
+      <p class="empty">Cart is empty</p>
+    </div>
+  </div>
+  <script src="process.js"></script>
+</body>
+</html>
+{
+  "name": "codeeeeeeeee",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
+const main = document.getElementById('body');
+const cart = main 
+                .firstElementChild
+                .nextElementSibling
+                .firstElementChild
+                .nextElementSibling
+ 
+const body = document.getElementById('body');
+const products = Array.from(body
+                .firstElementChild
+                .nextElementSibling
+                .firstElementChild
+                .firstElementChild
+                .nextElementSibling
+                .children);
+
+products.forEach((products) => {
+    products.addEventListener('click', ()=>{
+
+        const div = document.createElement('div');
+const productName = document.createElement('h6');
+const price = document.createElement('small');
+
+productName.innerText = products.firstElementChild.innerText;
+ div.classList.add('bg-pink-400');
+    div.append(productName);
+    console.log(div);
+
+ cart.append(div);   
+
+div.classList.add('flex');
+console.log(products
+    .firstElementChild
+    .innerText
+
+
+   
+);
+    })
+});
+//Create new

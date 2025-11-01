@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+.body {
+  @apply bg-[#FFE1AF] flex flex-col items-center p-6;
+}
+
+.cart-title {
+  @apply text-3xl font-bold mb-6 bg-[#B77466] px-10 py-2 rounded-3xl text-center border-4 border-solid border-black;
+}
+
+.main-container {
+  @apply grid grid-cols-2 gap-6 w-full max-w-6xl;
+}
+
+.one {
+  @apply bg-[#E2A16F] rounded-2xl shadow-md p-5 border-4 border-solid border-black duration-100;
+}
+
+.products-title {
+  @apply text-2xl font-semibold text-center  mb-4 text-white;
+}
+
+.products-list {
+  @apply flex flex-col gap-2;
+}
+
+.product-card {
+  @apply bg-white font-bold px-4 py-2 rounded-xl shadow-sm border border-gray-300 border-solid;
+}
+
+.cart-section-title {
+  @apply text-2xl font-semibold text-center mb-4;
+}
+
+.empty {
+  @apply text-center italic;
+}
+.products-title {
+  @apply text-3xl font-bold text-center mb-4 bg-[#B77466] rounded-2xl text-white py-2;
+}
+
+.products-list {
+  @apply grid grid-cols-3 gap-3;
+}
+
+.product-card {
+  @apply  p-3 rounded-xl shadow-sm text-center 
+  transition-transform hover:scale-105 
+  cursor-pointer border-2 border-solid border-black
+  hover:border-white hover:font-bold;
+}
+
+.cart-container {
+  @apply bg-[#E2A16F] rounded-2xl shadow-md p-5 border-4 border-solid border-black text-white;
+}
+
+
+.cart-section-title {
+  @apply text-3xl font-bold mb-4 text-center bg-[#B77466] rounded-2xl py-2 text-[#f0ebeb] border-2 border-solid border-black;
+}
+
+.empty {
+  @apply text-center text-white;
+}
